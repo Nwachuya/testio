@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 
 // CONFIGURATION: The subpath you are hosting on
-const BASE_PATH = '/test';
+const BASE_PATH = '/testio';
 
 // 1. Log every request so you can see in Coolify logs what is happening
 app.use((req, res, next) => {
@@ -29,3 +29,4 @@ app.get(`${BASE_PATH}/api/ping`, (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running. accessible at http://localhost:${PORT}${BASE_PATH}`);
 });
+
